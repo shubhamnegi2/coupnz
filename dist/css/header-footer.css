@@ -1,0 +1,57 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginBtn {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.headerSearchBtn {
+    background-color: #f6c38d;
+}
+
+.mainSlidingScrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.navSlidingBtns i {
+    background-color: #dd5a90;
+    color: #fff;
+}
+
+nav {
+    background-color: #dd5a90;
+}
+
+.mailSlidingUl li ul {
+    background-color: #fff;
+}
+
+.mailSlidingUl li ul li {
+    border-bottom: 1px solid rgba(235, 105, 7, 0.3);
+}
+
+.mailSlidingUl li ul li a {
+    display: block;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.mailSlidingUl li ul li a:hover {
+    background-color: #eee;
+    transition: all .3s ease;
+}
+
+.mailSlidingUl li ul li:last-child {
+    border-bottom: none;
+}
+
+.footerNewslatter input::selection {
+    background-color: yellow;
+    color: black;
+    /* Optionally, you can set the text color */
+}
+::-webkit-scrollbar {
+    width: 5px;
+}

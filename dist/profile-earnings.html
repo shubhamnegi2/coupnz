@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.wishfin.com/images/favicon3/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.wishfin.com/images/favicon3/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.wishfin.com/images/favicon3/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/wishfin.webmanifest">
+    <link rel="shortcut icon" href="https://www.wishfin.com/images/favicon3/favicon.ico">
+    <link rel="mask-icon" href="https://www.wishfin.com/images/favicon3/safari-pinned-tab.svg">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css example</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"  /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <!-- <link rel="stylesheet" href="./css/contact-us.css"> -->
+</head>
+
+<body class="bg-[#eee]">
+    <div class=" bg-[#dd5a90] fixed top-0 left-0 w-full z-50">
+        <header class="flex items-center py-2">
+            <div class="px-5 w-full  flex items-center justify-between">
+                <div class="logo">
+                    <a href=""> <img src="./images/logo.png" class="lg:w-[200px] md:w-[160px] w-[130px] "
+                            alt="logo"></a>
+                </div>
+                <div class="w-[40%] hidden sm:block headerSearchWrapper searchWrapper">
+                    <div class="text-white text-sm font-medium w-full flex items-center justify-center">
+                        <input
+                            class="border-none outline-none shadow-none  bg-white py-2 pl-4  pr-2 w-full placeholder: placeholder:font-normal placeholder:text-xs placeholder:tracking-widest md:h-[33px] h-[25px] rounded-l-[20px] text-black"
+                            type="search" placeholder="Search for iPhone, Flipkart, Swiggy, Recharge & more">
+                        <button
+                            class="flex items-center justify-center md:h-[33px] h-[25px]   py-2 px-4 headerSearchBtn  text-white rounded-r-[20px] font-medium text-sm tracking-widest">
+                            <i class="fa-solid fa-magnifying-glass cursor-pointer "></i>
+                            <span class="pl-0 lg:pl-3 mt-[2px] hidden lg:block ">Search</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass sm:hidden showMobileSearchBox  flex items-center justify-center mr-3 cursor-pointer text-white rounded-[20px] text-xs border w-[30px] h-[30px] "></i>
+                    <button
+                        class="lg:px-8 md:px-5 sm:px-3  p-2 text-white rounded-[20px]  flex justify-center items-center md:h-[33px] sm:h-[25px]  text-xs md:text-sm tracking-widest loginBtn"><i
+                            class="fa-solid fa-user sm:mr-2"></i><span class="md:mt-[3px] hidden sm:block"> Login/Sign
+                            up</span></button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="h-6 ">
+            <div class="flex justify-between items-center relative navSlidingBtns">
+                <i
+                    class="slideLeft fa-solid fa-chevron-left absolute left-0 top-[-6px] text-xs  flex items-center justify-center w-7 h-7 hover:bg-blue-800  cursor-pointer  p-2 z-10"></i>
+                <i
+                    class="slideRight fa-solid fa-chevron-right absolute right-0 top-[-6px] text-xs flex items-center justify-center w-7 h-7 hover:bg-blue-800  cursor-pointer  p-2 z-10"></i>
+            </div>
+            <div class="overflow-x-hidden  mainSlidingScrollbar text-white">
+                <ul class="flex max-w-[150%] w-full space-x-4 pb-2 text-xs pl-9 mailSlidingUl">
+                    <li class="flex-shrink-0 cursor-pointer group relative  hover:text-[#f6c38d] h-6">Miscellaneous
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Others</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Financial Services</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Pet Products</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Matrimonial</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Astrology</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative  hover:text-[#f6c38d] h-6">Local Services
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Others</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Financial Services</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Pet Products</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Matrimonial</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Astrology</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">AutoMobile
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Accessories & Gears</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Car Electronics</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Car & Bike Servicing</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Used Vehicles</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Sports & Fitness
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Sports Apparel & Equipment</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Fitness Equipment</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Supplements & Health Drinks</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Kidz Babies & Toys
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Baby Products</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Apparel & Accessories</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Toys & Games</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">School Essentials</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Books and Staionary
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Books, EBooks & Magazines</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Posters & Stationery</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">flowers , Gifts &
+                        Jewellery
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Gifts</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Jewellery</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Flowers & Cakes</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Personalized Gifts</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Gift Combos</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Chocolates</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Soft Toys</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Greeting Cards</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Adult Gifts</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Grooming Hampers</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Gold Coins & Bars</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Travel
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Hotel</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Flight</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Bus</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Cabs</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Holiday</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Car Rentals</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Self-drive Cars</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Railway Bookings</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Miscellaneous
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Others</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Financial Services</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Pet Products</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Matrimonial</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Astrology</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Local Services
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Others</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Financial Services</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Pet Products</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Matrimonial</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Astrology</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">fsdfa </a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">AutoMobile
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Accessories & Gears</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Car Electronics</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Car & Bike Servicing</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Used Vehicles</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Sports & Fitness
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Sports Apparel & Equipment</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Fitness Equipment</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Supplements & Health Drinks</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Kidz Babies & Toys
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Baby Products</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Apparel & Accessories</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Toys & Games</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">School Essentials</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">Books and Staionary
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Books, EBooks & Magazines</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Posters & Stationery</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] h-6">flowers , Gifts &
+                        Jewellery
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-5 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Gifts</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Jewellery</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Flowers & Cakes</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Personalized Gifts</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Gift Combos</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Chocolates</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Soft Toys</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Greeting Cards</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Adult Gifts</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Grooming Hampers</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Gold Coins & Bars</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex-shrink-0 cursor-pointer group relative hover:text-[#f6c38d] pr-20 h-6">Travel
+                        <ul
+                            class="hidden group-hover:block absolute  top-6 -left-10 min-w-[150px]  text-black z-20 rounded-sm">
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Hotel</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Flight</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Bus</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Cabs</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Holiday</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Car Rentals</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Self-drive Cars</a></li>
+                            <li class="flex-shrink-0 "><a class="py-2 px-3" href="">Railway Bookings</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="mobileSearchWrapper searchWrapper border-b border-slate-300 hidden sm:hidden">
+            <div class="w-[90%]  m-auto my-2 ">
+                <div class="text-white text-sm font-medium w-full flex items-center justify-center">
+                    <input
+                        class="border-none outline-none shadow-none  bg-white  pl-4  pr-2 w-full placeholder: placeholder:font-normal placeholder:text-xs placeholder:tracking-widest md:h-[33px] h-[32px] rounded-l-[20px] text-black"
+                        type="search" placeholder="Search for iPhone, Flipkart, Swiggy, Recharge & more">
+                    <button
+                        class="flex items-center justify-center md:h-[33px] h-[32px]   py-2 px-4 headerSearchBtn  text-white rounded-r-[20px] font-medium text-sm tracking-widest">
+                        <i class="fa-solid fa-magnifying-glass cursor-pointer "></i>
+                        <span class="pl-0 lg:pl-3 mt-[2px] hidden lg:block ">Search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="homeSec  mb-3 sm:mx-5 mx-2 mt-[100px]">
+        <h2 class="p-3 mb-2 bg-white text-center text-xl font-semibold text-[#f6c38d] uppercase border-b rounded-sm ">
+            My Earnings </h2>
+        <div class="md:flex  bg-white">
+            <div class="lg:w-[20%] md:w-[25%] border-r p-5 bg-[#eee] md:bg-white">
+                <ul class="flex md:block max-w-full overflow-x-scroll md:overflow-hidden">
+                    <li class="flex-shrink-0 mx-2 text-sm "><a class="block py-2 md:border-b border-[#dd5a90] text-[#f6c38d] font-semibold" href="">My
+                            Earnings</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">Withdraw</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">Payments History</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">Raise Ticket</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">Refer & Earn</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">Referral Network</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">My Activity</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">My Bot</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">Settings</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:b" href="">Logout</a></li>
+                </ul>
+            </div>
+            <div class="lg:w-[70%] md:w-[75%] py-7 md:px-10 px-5">
+                <h2 class="capitalize font-semibold  text-[#dd5a90] text-2xl ">Redeemable Amount</h2>
+                <h3 class="capitalize font-bold py-2 text-[#f6c38d] text-3xl "><strong><i
+                            class="fa-solid fa-indian-rupee-sign"></i> </strong> 368.01</h3>
+                <p class="text-xs mb-5">(Sale Profit + Referral Earning + Voucher Cashback + Card Approved Profit)</p>
+                <a href="" class=" text-white rounded-[20px]  bg-[#f6c38d] px-10 py-2">Reedem Now</a>
+                <div class="flex flex-wrap mt-8 pt-8 md:justify-between justify-center border-t-2">
+                    <div class="lg:w-[30%] md:w-[45%] w-full rounded-sm shadow-md p-5 bg-[#eee]">
+                        <a href="">
+                            <ul>
+                                <li class="flex justify-between text-[#f6c38d] font-semibold">Sale Profit <i
+                                        class="fa-solid fa-money-bill-trend-up text-[#dd5a90]"></i></li>
+                                <li class="mt-3 flex justify-between">Approved: <strong>0.00</strong></li>
+                                <li class="flex justify-between">Pending: <strong>220.00</strong></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="lg:w-[30%] md:w-[45%] w-full mt-5 md:mt-0 rounded-sm shadow-md p-5 bg-[#eee] ">
+                        <a href="">
+                            <ul>
+                                <li class="flex justify-between text-[#f6c38d] font-semibold">Sale Profit <i class="fa-solid fa-share-nodes text-[#dd5a90]"></i>
+                                </li>
+                                <li class="mt-3 flex justify-between">Approved: <strong>320.00</strong></li>
+                                <li class="flex justify-between">Pending: <strong>220.00</strong></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="lg:w-[30%] md:w-[45%] w-full mt-5 lg:mt-0 rounded-sm shadow-md p-5 bg-[#eee]">
+                        <a href="">
+                            <ul>
+                                <li class="flex justify-between text-[#f6c38d] font-semibold">Sale Profit <i class="fa-solid fa-gift text-[#dd5a90]"></i></li>
+                                <li class="mt-3 flex justify-between">Approved: <strong>540.00</strong></li>
+                                <li class="flex justify-between">Pending: <strong>220.00</strong></li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full bg-[url('../images/gradient.jpg')] p-5 bg-no-repeat bg-cover my-5">
+        <h2 class="text-center mb-4 mt-5 text-white font-semibold sm:text-3xl text-xl uppercase">Unlock your profit
+            potential with
+            us!
+        </h2>
+        <h3 class="text-[#f6c38d] text-center my-1 font-semibold sm:text-3xl text-xl capitalize">Exclusive Sale Profits
+        </h3>
+        <div
+            class="flex justify-center lg:w-2/4 md:w-[75%]  m-auto mt-5 border-2 border-dashed rounded-lg border-[#f6c38d] p-5">
+            <div class="text-center text-white ">
+                <i class="fa-solid fa-lock text-3xl text-[#4252ce]"></i>
+                <span class="text-slate-200 sm:text-2xl text-xl font-semibold sm:ml-3 block sm:inline-block">Old
+                    User</span> <br class="hidden sm:block">
+                <h3 class="my-3 text-sm sm:text-lg text-white">Experience a solid 2.52% Sale Profit on your loyalty</h3>
+            </div>
+            <div class="text-center text-white ml-5">
+                <i class="fa-solid fa-user-plus  sm:text-3xl text-xl text-[#4252ce]"></i>
+                <span class="text-slate-200 text-2xl font-semibold sm:ml-3 block sm:inline-block">New Users</span> <br
+                    class="hidden sm:block">
+                <h3 class="my-3 text-sm sm:text-lg text-white">Experience a solid 2.52% Sale Profit on your loyalty</h3>
+            </div>
+        </div>
+        <h3 class="text-center text-slate-400 text-xl font-semibold mt-5">Seize the opportunity to elevate your earnings
+            journey!</h3>
+        <div class="text-center my-5">
+            <button class="px-11 py-2 bg-[#f6c38d]  font-semibold  text-white rounded-[20px]">Explore Now</button>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="bg-[#dd5a90] px-[5%] py-12">
+        <div class="flex flex-wrap justify-between">
+            <div class="lg:w-[30%] sm:w-[48%]  w-full">
+                <img src="./images/logo.png" class="w-2/4 m-auto sm:m-0" alt="logo">
+                <p class="text-white my-3 text-center sm:text-left">Dive into a realm of exclusive offers and
+                    unbeatable
+                    discounts. Experience
+                    top-notch quality at affordable prices. Join our community for curated deals, making every
+                    purchase
+                    a delight. Elevate your shopping with KUPNZ, where savings meet satisfaction. Your go-to
+                    destination
+                    for unparalleled value. </p>
+            </div>
+            <div class="lg:w-[20%] w-[48%] mt-10 lg:mt-0">
+                <h2 class="text-[#f6c38d] text-lg font-semibold">QUICK LINKS</h2>
+                <ul class="text-white font-normal mt-3">
+                    <li><a class="py-[3px] inline-block" href="">About Us</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Contact Us</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Blog</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Start A Business</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Privacy Policy</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="lg:w-[15%] w-[48%] mt-10 lg:mt-0">
+                <h2 class="text-[#f6c38d] text-lg font-semibold">POPULAR </h2>
+                <ul class="text-white font-normal mt-3">
+                    <li><a class="py-[3px] inline-block" href="">Amazon</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Flipkart</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Myntra</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Fashion</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Beauty & Health</a></li>
+                    <li><a class="py-[3px] inline-block" href="">Food & Dining</a></li>
+                </ul>
+            </div>
+            <div class="lg:w-[25%] sm:w-[48%]  w-full mt-10 lg:mt-0 ">
+                <h2 class="text-[#f6c38d] text-lg font-semibold">NEWSLATTER</h2>
+                <div class="flex items-center relative mt-5 footerNewslatter">
+                    <i class="fa-regular fa-envelope  text-white  absolute top-2/4 -translate-y-2/4 left-0 z-10"></i>
+                    <input class="bg-transparent text-white   w-full px-6 py-3 outline-none shadow-none border-b"
+                        type="text" placeholder="Enter Your Email Id">
+                    <i
+                        class="fa-solid fa-right-long  text-white absolute top-2/4 -translate-y-2/4 right-0 p-1 cursor-pointer z-10 newsLatterSubmit"></i>
+                </div>
+                <div class=" hidden newsLatterError text-red-600 my-2 text-sm font-normal ">Please Enter Email</div>
+                <div class="flex items-center mx-2 mt-7">
+                    <a class="w-8 h-8 mr-2 rounded-full flex items-center justify-center text-black bg-white" href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="w-8 h-8 mx-2 rounded-full flex items-center justify-center text-black bg-white" href="">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="w-8 h-8 mx-2 rounded-full flex items-center justify-center text-black bg-white" href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a class="w-8 h-8 mx-2 rounded-full flex items-center justify-center text-black bg-white" href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="w-8 h-8 mx-2 rounded-full flex items-center justify-center text-black bg-white" href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="mt-7 text-white">© 2024 Kupnz, Inc. All rights reserved. </p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="./js/header-footer.js"></script>
+<script src="./js//add-to-cart-sidebar.js"></script>
+    <!-- <script src="./js/contact-us.js"></script> -->
+</body>
+
+</html>

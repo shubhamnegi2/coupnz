@@ -1,0 +1,10 @@
+$(function(){
+    $('.shareBtn').click(function(e){
+        e.preventDefault();
+        $('.sharePopup').css('display','flex');
+    })
+    $('.closeSharePopup').click(function(e){
+        e.preventDefault();
+        $('.sharePopup').hide();
+    })
+})

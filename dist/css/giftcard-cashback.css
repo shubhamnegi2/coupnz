@@ -1,0 +1,49 @@
+#myTable_length,
+#myTable_filter {
+    font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    padding: 0;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    padding: 0;
+}
+
+table th {
+    font-weight: 500px;
+    font-size: 14px;
+}
+
+table td {
+    font-size: 14px;
+}
+
+table.dataTable.row-border>tbody>tr>th,
+table.dataTable.row-border>tbody>tr>td,
+table.dataTable.display>tbody>tr>th,
+table.dataTable.display>tbody>tr>td {
+    border: 0;
+
+}
+
+table.dataTable>thead>tr>th,
+table.dataTable>thead>tr>td {
+    border: 0;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #eee;
+}
+
+.dataTables_info,
+.dataTables_paginate.paging_simple_numbers {
+    font-size: 14px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    padding: 0;
+}
+table tr th:last-child{
+    min-width: 135px;
+}

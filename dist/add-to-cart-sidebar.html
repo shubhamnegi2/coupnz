@@ -1,0 +1,55 @@
+<aside class="cartSideBar bg-white p-2 fixed top-0 right-[-270px] z-[99] w-[250px] h-full flex flex-col justify-between transition-all ease-in-out">
+    <div>
+        <div class="CartHeader flex justify-between items-center border-b border-slate-300 pb-1">
+            <h2 class="text-sm"> <i class="fa-solid fa-cart-plus mr-1"></i>Your Cart</h2>
+            <i class="fa-solid fa-xmark closeCartSideBar cursor-pointer p-1"></i>
+        </div>
+        <div class="cartBody my-3  overflow-y-scroll">
+
+            <!-- <div class="cartItem flex items-center justify-between py-1 border-b hover:shadow-md">
+                <img src="./images/jacket1.jpg" alt="itsm" class="w-7 rounded">
+                <div class="itemDetails ">
+                    <p class="name text-xs truncate w-[80px] overflow-hidden whitespace-nowrap text-ellipsis"
+                        title="Winter Gray Color Danim Jacket for man with High Quallity fabirc">Winter
+                        Gray Color Danim Jacket for man with High Quallity fabirc</p>
+                    <span class="price text-xs">₹ 1250.25</span>
+                </div>
+                <div class="flex items-center h-5 sidebarCartAction">
+                    <button
+                        class="bg-[#dd5a90] w-5 h-full border-transparent flex items-center justify-center text-xs cursor-pointer text-white reduceQuantity"><i
+                            class="fa-solid fa-minus"></i></button>
+                    <input type="text" min="1" " value="1" onkeypress="return numOnly(event)"
+                        class="cartQuantityInput w-6 h-full outline-none shadow-none border text-xs  text-center">
+                    <button
+                        class="bg-[#dd5a90] w-5 h-full border-transparent flex items-center justify-center text-xs cursor-pointer text-white AddQuantity "><i
+                            class="fa-solid fa-plus"></i></button>
+                </div>
+                <i class="fa-solid fa-trash-can cursor-pointer deleteCartItem"></i>
+            </div> -->
+
+           
+        </div>
+    </div>
+    <div class="cartFooter border-t">
+        <div class="coupon p-1">
+            <span class="text-sm pl-2">Have a coupn code ? </span>
+            <div class="flex mt-1">
+                <input type="text" name="" class="pl-2  outline-none shadow-none border-b text-sm"
+                    placeholder="Enter Coupon Code Here">
+                <button class="bg-[#dd5a90]  cursor-pointer text-white px-5 py-0 text-xs rounded-sm ">Apply</button>
+            </div>
+        </div>
+        <div class="balance  mt-2">
+            <ul class="text-xs">
+                <li class="flex justify-between capitalize py-1">subtotal <strong>₹ <span class="subtotal">0</span></strong></li>
+                <li class="flex justify-between capitalize py-1">shipping <strong>₹ <span class="shipping">0</span></strong></li>
+                <li class="flex justify-between capitalize py-1">tax <strong>₹ <span class="tax">0</span></strong></li>
+                <li class="flex justify-between capitalize py-1">discounts <strong>₹ <span class="discounts">0</span></strong></li>
+            </ul>
+            <p class="flex justify-between capitalize border-t text-sm">Total <strong>₹ <span class="Total">0</span></strong></p>
+        </div>
+        <div class="text-center my-1 w-full">
+            <a href="" class="bg-[#dd5a90] text-white w-full block  py-1 text-xs rounded-sm ">Checkout</a>
+        </div>
+    </div>
+</aside>

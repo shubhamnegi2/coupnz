@@ -1,0 +1,12 @@
+table tr {
+    border-bottom: 1px solid #eee;
+    height: 35px;
+}
+
+table tr td{
+    font-size: 14px;
+}
+table tr td:last-child{
+    padding-left: 15px;
+    font-weight: 500;
+}
